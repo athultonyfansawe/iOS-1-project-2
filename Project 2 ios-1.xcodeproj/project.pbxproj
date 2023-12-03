@@ -13,6 +13,14 @@
 		1151DC8829E61290007B5E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1151DC8629E61290007B5E3B /* Main.storyboard */; };
 		1151DC8A29E61292007B5E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1151DC8929E61292007B5E3B /* Assets.xcassets */; };
 		1151DC8D29E61292007B5E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1151DC8B29E61292007B5E3B /* LaunchScreen.storyboard */; };
+		FAAF15CC2B16620B00B96C62 /* WeatherDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF15CA2B16620B00B96C62 /* WeatherDetailTableViewCell.swift */; };
+		FAAF15CD2B16620B00B96C62 /* WeatherDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAF15CB2B16620B00B96C62 /* WeatherDetailTableViewCell.xib */; };
+		FABC73E62B185FB700724CFD /* SearchedWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC73E52B185FB700724CFD /* SearchedWeatherViewController.swift */; };
+		FAF3A5592B07CE09009C18C0 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3A5582B07CE09009C18C0 /* Network.swift */; };
+		FAF3A55C2B07CE7E009C18C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3A55B2B07CE7E009C18C0 /* Constants.swift */; };
+		FAF3A55F2B07D1F7009C18C0 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3A55E2B07D1F7009C18C0 /* WeatherModel.swift */; };
+		FAF3A5632B07EF69009C18C0 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3A5612B07EF69009C18C0 /* LoadingViewController.swift */; };
+		FAF3A5642B07EF69009C18C0 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF3A5622B07EF69009C18C0 /* LoadingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		1151DC8929E61292007B5E3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1151DC8C29E61292007B5E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1151DC8E29E61292007B5E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAF15CA2B16620B00B96C62 /* WeatherDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailTableViewCell.swift; sourceTree = "<group>"; };
+		FAAF15CB2B16620B00B96C62 /* WeatherDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherDetailTableViewCell.xib; sourceTree = "<group>"; };
+		FABC73E52B185FB700724CFD /* SearchedWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedWeatherViewController.swift; sourceTree = "<group>"; };
+		FAF3A5582B07CE09009C18C0 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		FAF3A55B2B07CE7E009C18C0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAF3A55E2B07D1F7009C18C0 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		FAF3A5612B07EF69009C18C0 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		FAF3A5622B07EF69009C18C0 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,11 @@
 		1151DC7F29E61290007B5E3B /* Project 2 ios-1 */ = {
 			isa = PBXGroup;
 			children = (
+				FABC73E42B185F8300724CFD /* WeatherList */,
+				FAAF15C92B1661D400B96C62 /* Views */,
+				FAF3A55D2B07D1E6009C18C0 /* Model */,
+				FAF3A55A2B07CE70009C18C0 /* Utils */,
+				FAF3A5542B07CC1F009C18C0 /* Network */,
 				1151DC8029E61290007B5E3B /* AppDelegate.swift */,
 				1151DC8229E61290007B5E3B /* SceneDelegate.swift */,
 				1151DC8429E61290007B5E3B /* ViewController.swift */,
@@ -65,6 +86,57 @@
 				1151DC8E29E61292007B5E3B /* Info.plist */,
 			);
 			path = "Project 2 ios-1";
+			sourceTree = "<group>";
+		};
+		FAAF15C92B1661D400B96C62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAAF15CA2B16620B00B96C62 /* WeatherDetailTableViewCell.swift */,
+				FAAF15CB2B16620B00B96C62 /* WeatherDetailTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FABC73E42B185F8300724CFD /* WeatherList */ = {
+			isa = PBXGroup;
+			children = (
+				FABC73E52B185FB700724CFD /* SearchedWeatherViewController.swift */,
+			);
+			path = WeatherList;
+			sourceTree = "<group>";
+		};
+		FAF3A5542B07CC1F009C18C0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3A5582B07CE09009C18C0 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FAF3A55A2B07CE70009C18C0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3A5602B07EF53009C18C0 /* LoadingScreen */,
+				FAF3A55B2B07CE7E009C18C0 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FAF3A55D2B07D1E6009C18C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3A55E2B07D1F7009C18C0 /* WeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAF3A5602B07EF53009C18C0 /* LoadingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3A5612B07EF69009C18C0 /* LoadingViewController.swift */,
+				FAF3A5622B07EF69009C18C0 /* LoadingViewController.xib */,
+			);
+			path = LoadingScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +155,8 @@
 			dependencies = (
 			);
 			name = "Project 2 ios-1";
+			packageProductDependencies = (
+			);
 			productName = "Project 2 ios-1";
 			productReference = 1151DC7D29E61290007B5E3B /* Project 2 ios-1.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +185,8 @@
 				Base,
 			);
 			mainGroup = 1151DC7429E61290007B5E3B;
+			packageReferences = (
+			);
 			productRefGroup = 1151DC7E29E61290007B5E3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +203,9 @@
 			files = (
 				1151DC8D29E61292007B5E3B /* LaunchScreen.storyboard in Resources */,
 				1151DC8A29E61292007B5E3B /* Assets.xcassets in Resources */,
+				FAAF15CD2B16620B00B96C62 /* WeatherDetailTableViewCell.xib in Resources */,
 				1151DC8829E61290007B5E3B /* Main.storyboard in Resources */,
+				FAF3A5642B07EF69009C18C0 /* LoadingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +216,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF3A5632B07EF69009C18C0 /* LoadingViewController.swift in Sources */,
+				FAF3A55C2B07CE7E009C18C0 /* Constants.swift in Sources */,
+				FAAF15CC2B16620B00B96C62 /* WeatherDetailTableViewCell.swift in Sources */,
 				1151DC8529E61290007B5E3B /* ViewController.swift in Sources */,
 				1151DC8129E61290007B5E3B /* AppDelegate.swift in Sources */,
+				FABC73E62B185FB700724CFD /* SearchedWeatherViewController.swift in Sources */,
+				FAF3A5592B07CE09009C18C0 /* Network.swift in Sources */,
+				FAF3A55F2B07D1F7009C18C0 /* WeatherModel.swift in Sources */,
 				1151DC8329E61290007B5E3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,19 +371,25 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LCFP42MJX2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Project 2 ios-1/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Project 2, wants to use your current location to get your weather condition";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Project 2, wants to use your current location to get your weather condition";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Project 2, wants to use your current location to get your weather condition";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Project 2, wants to use your current location to get your weather condition";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.athul-tony.Project-2-ios-1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devstart.ke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -314,19 +404,25 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LCFP42MJX2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Project 2 ios-1/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Project 2, wants to use your current location to get your weather condition";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Project 2, wants to use your current location to get your weather condition";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Project 2, wants to use your current location to get your weather condition";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Project 2, wants to use your current location to get your weather condition";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.athul-tony.Project-2-ios-1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devstart.ke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
